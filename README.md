@@ -18,7 +18,7 @@ Each animation creation executable first renders all frames, then prints the rel
 
 
 ## Torus morph animation
-<video src="torus_morph.mp4" controls></video>
+<video src="torus_morph_old.mp4" controls></video>
 
 
 # Project Zip
