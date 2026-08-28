@@ -12,6 +12,11 @@
 
 # Animation creation executables
 Each animation creation executable first renders all frames, then prints the relevant ffmpeg command to stitch them together into a video.
+
+## Sphere union
+<video src="outdoor_new4.mp4" controls></video>
+
+
 ## Torus morph animation
 <video src="torus_morph.mp4" controls></video>
 
