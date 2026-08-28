@@ -23,5 +23,5 @@ Each animation creation executable first renders all frames, then prints the rel
 
 
 # Project Zip
-<a href="https://github.com/mandywyllie/CSCI5607Project2/blob/main/project2Graphics.zip">Project Zip</a>
+<a href="https://github.com/mandywyllie/CSCI5607Project5/blob/main/CSCI5607project5.zip">Project Zip</a>
 
