@@ -1,6 +1,9 @@
 
 # SDF Ray Tracer
 
+* TOC
+{:toc}
+
 ## Animations
 Each animation executable first uses the raytracer to render all frames, then prints the relevant ffmpeg command to stitch them together into a video.
 
