@@ -13,6 +13,9 @@
 # Animation creation executables
 Each animation creation executable first renders all frames, then prints the relevant ffmpeg command to stitch them together into a video.
 ## Torus morph animation
+<video src="torus_morph.mp4" controls></video>
+
 
 # Project Zip
 <a href="https://github.com/mandywyllie/CSCI5607Project2/blob/main/project2Graphics.zip">Project Zip</a>
+
