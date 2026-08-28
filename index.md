@@ -11,6 +11,10 @@ Each animation executable first uses the raytracer to render all frames, then pr
 <video src="outdoor_new4.mp4" controls style="width: 90%;"></video>
 Created with `outdoor_animate.exe`.
 
+<video src="bounce_union_old.mp4" controls style="width: 90%;"></video>
+Created with `bounce_union_old.exe`. Uses the old version of `sdf_union`, which interpolated the color of a hitpoint based on its distance to each of the objects. This caused errors with refraction and tori, so it is currently commented out in the file.
+
+
 ### SDF Morph Example
 <video src="torus_morph_old.mp4" controls style="width: 90%;"></video>
 Created with `torus_morph.exe`.
