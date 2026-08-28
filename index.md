@@ -1,9 +1,4 @@
 
----
-layout: default
-title: My GitHub Pages Site
----
-
 # SDF Ray Tracer
 1. To Compile
     With Checks for memory issues: 
