@@ -1,13 +1,11 @@
 
-# SDF Ray Tracer
-
 * TOC
 {:toc}
 
-## Animations
+# Animations
 Each animation executable first uses the raytracer to render all frames, then prints the relevant ffmpeg command to stitch them together into a video.
 
-### SDF Union Examples
+## SDF Union Examples
 <video src="outdoor_new4.mp4" controls style="width: 90%;"></video>
 Created with `outdoor_animate.exe`.
 
@@ -15,11 +13,11 @@ Created with `outdoor_animate.exe`.
 Created with `bounce_union_old.exe`. Uses the old version of `sdf_union`, which interpolated the color of a hitpoint based on its distance to each of the objects. This caused errors with refraction and tori, so it is currently commented out in the file.
 
 
-### SDF Morph Example
+## SDF Morph Example
 <video src="torus_morph_old.mp4" controls style="width: 90%;"></video>
 Created with `torus_morph.exe`.
 
-## Scenefile commands and usage
+# Scenefile commands and usage
 The raytracer works by reading a plaintext scenefile. Instructions for creating the the scenefile are <a href="https://github.com/mandywyllie/CSCI5607Project5/blob/main/SceneFile.pdf">here</a>. The SDF ray tracer supports all those original commands, and implements these new commands:
 
 | Function | Parameters | Description |
@@ -33,7 +31,7 @@ The raytracer works by reading a plaintext scenefile. Instructions for creating 
 [//]: # (TODO add example usage here)
 
 
-## Compiling and running the raytracer
+# Compiling and running the raytracer
   
   1. To Compile
     With Checks for memory issues: 
@@ -47,6 +45,6 @@ The raytracer works by reading a plaintext scenefile. Instructions for creating 
 
 
 
-## Project Files
+# Project Files
 You can view the files on github <a href="https://github.com/mandywyllie/CSCI5607Project5/">here</a>, or download the project zip <a href="https://github.com/mandywyllie/CSCI5607Project5/blob/main/CSCI5607project5.zip">here</a>.
 
