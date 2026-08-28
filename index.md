@@ -1,8 +1,18 @@
 
 # SDF Ray Tracer
-<details open>
-    <summary><b>Scenefile commands and usage</b></summary>
 
+## Animations
+Each animation executable first uses the raytracer to render all frames, then prints the relevant ffmpeg command to stitch them together into a video.
+
+### SDF Union Examples
+<video src="outdoor_new4.mp4" controls style="width: 90%;"></video>
+Created with `outdoor_animate.exe`.
+
+### SDF Morph Example
+<video src="torus_morph_old.mp4" controls style="width: 90%;"></video>
+Created with `torus_morph.exe`.
+
+## Scenefile commands and usage
 The raytracer works by reading a plaintext scenefile. Instructions for creating the the scenefile are <a href="https://github.com/mandywyllie/CSCI5607Project5/blob/main/SceneFile.pdf">here</a>. The SDF ray tracer supports all those original commands, and implements these new commands:
 
 | Function | Parameters | Description |
@@ -15,11 +25,8 @@ The raytracer works by reading a plaintext scenefile. Instructions for creating 
 
 [//]: # (TODO add example usage here)
 
-</details>
 
-
-<details>
-  <summary>Compiling and running the raytracer</summary>
+## Compiling and running the raytracer
   
   1. To Compile
     With Checks for memory issues: 
@@ -31,20 +38,8 @@ The raytracer works by reading a plaintext scenefile. Instructions for creating 
    `.\ray.exe *path to scenefile* `   
    Ex: `.\ray.exe .\ExampleScenes\sdf_box.txt `
 
-</details>
 
 
-# Animation creation executables
-Each animation creation executable first renders all frames, then prints the relevant ffmpeg command to stitch them together into a video.
-
-## SDF Union Examples
-<video src="outdoor_new4.mp4" controls style="width: 90%;"></video>
-
-
-## SDF Morph Example
-<video src="torus_morph_old.mp4" controls style="width: 90%;"></video>
-
-
-# Project Files
+## Project Files
 You can view the files on github <a href="https://github.com/mandywyllie/CSCI5607Project5/">here</a>, or download the project zip <a href="https://github.com/mandywyllie/CSCI5607Project5/blob/main/CSCI5607project5.zip">here</a>.
 
