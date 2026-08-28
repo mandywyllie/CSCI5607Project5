@@ -1,0 +1,40 @@
+camera_pos: 0 0 -60
+camera_fwd: 0 0 -1
+camera_up:  0 1 0
+camera_fov_ha: 15
+output_image: outdoor_box.png
+
+#left sphere
+#material: 0 0 0 .2 .2 .2 .1 .1 .1 15 .9 .9 .9 1.5
+#sdf_box: -10 -5 10 4 4 4
+#sdf_sphere: -10 0 10 4
+
+#sdf_union
+
+#right sphere
+material: 0 0 0 0 0 0 .9 .9 .9 15 0 0 0 1
+sdf_box: 10 5 10 8 8 12
+sdf_sphere: -4 12 10 8
+#sdf_union
+
+material:material: 0 0 0 0 0 0 .9 .9 .9 15 0 0 0 1
+sdf_sphere: 10 5 0 3
+
+max_vertices: 4
+
+vertex: -2000 -10 -2000
+vertex:  2000 -10 -2000
+vertex:  2000 -10 2000
+vertex: -2000 -10 2000
+
+material: 0 0 0 1 1 1 0 0 0 5 0 0 0 1
+
+triangle: 0 1 2
+triangle: 0 2 3
+
+background: 0 0 1
+
+directional_light: 1 1 1 -1 -1 1 
+#red directional light directly down
+directional_light: 1 0 0 0 -1 0
+point_light: 0 100 0 0 -9 10
