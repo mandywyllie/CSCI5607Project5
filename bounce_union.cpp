@@ -62,7 +62,7 @@ int main(int argc, char** argv) {
                     "material: 0 0 1 0 0 1 0 0 0 16 0 0 0 1.0\n"
                     "sdf_sphere: "<< sphereX <<" 1.5 .7 .5\n"
 
-                    "sdf_union\n"
+                    "sdf_union:\n"
 
                     "#white overhead light\n"
                     "point_light: 10 10 10 0 5 0\n"

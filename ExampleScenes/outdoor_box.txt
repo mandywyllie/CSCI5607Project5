@@ -9,13 +9,13 @@ output_image: outdoor_box.png
 #sdf_box: -10 -5 10 4 4 4
 #sdf_sphere: -10 0 10 4
 
-#sdf_union
+#sdf_union:
 
 #right sphere
 material: 0 0 0 0 0 0 .9 .9 .9 15 0 0 0 1
 sdf_box: 10 5 10 8 8 12
 sdf_sphere: -4 12 10 8
-#sdf_union
+#sdf_union:
 
 material:material: 0 0 0 0 0 0 .9 .9 .9 15 0 0 0 1
 sdf_sphere: 10 5 0 3

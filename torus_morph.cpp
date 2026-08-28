@@ -56,7 +56,7 @@ sdf_torus: -2 3 6 1 .3 0 0 1
 #green sphere:
 material: 0 .7 0 0 .7 0 0 0 0 16 .9 .9 .9 1.1
 sdf_torus: -2 1 4 1 .3 0 0 1
-sdf_morph )" << t << R"(
+sdf_morph: )" << t << R"(
 sdf_box: 0 2 -2 1 1 1 1 1 0
 
 

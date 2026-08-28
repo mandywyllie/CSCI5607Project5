@@ -124,7 +124,7 @@ void parseSceneFile(std::string fileName){
         } else {
             std::cerr << "Error: 'sdf_torus' command requires 8 numeric parameters." << std::endl;
         }
-      }else if (command == "sdf_union") {
+      }else if (command == "sdf_union:") {
         float k;
         bool blendfactor = false;
         if (ss >> k) {
@@ -154,7 +154,7 @@ void parseSceneFile(std::string fileName){
         } catch (...) {
             std::cerr << "Error: 'sdf_union' command requires two STF objects defined before it." << std::endl;
         }
-      }else if (command == "sdf_morph") {
+      }else if (command == "sdf_morph:") {
         float t;
         bool time = false;
         if (ss >> t) {

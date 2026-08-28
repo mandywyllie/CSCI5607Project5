@@ -54,7 +54,7 @@ material: 0 0 0 0 0 0 .9 .9 .9 15 0 0 0 1
 sdf_sphere: 10 4 10 8
 sdf_sphere: )" << 2.0*sphereY+2.0f << " " << -2.0f*sphereY +5 << R"( 10 4
 
-sdf_union 9
+sdf_union: 9
 
 max_vertices: 4
 
