@@ -104,7 +104,7 @@ void parseSceneFile(std::string fileName){
         } else {
             std::cerr << "Error: 'sdf_sphere' command requires 4 numeric parameters." << std::endl;
         }
-      }else if (command == "sdf_box:") {
+      }else if (command == "sdf_box:") { //TODO create defaults for torus and box and sphere
         float x, y, z, hx, hy, hz, dx, dy, dz;;
         if (ss >> x >> y >> z >> hx >> hy >> hz>> dx >> dy >> dz) { 
             auto newBox = std::make_shared<SDFBox>(
