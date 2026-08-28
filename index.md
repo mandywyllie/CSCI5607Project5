@@ -18,7 +18,7 @@ Created with `bounce_union_old.exe`. Uses the old version of `sdf_union`, which 
 Created with `torus_morph.exe`.
 
 # Scenefile commands and usage
-The raytracer works by reading a plaintext scenefile. Instructions for creating the the scenefile are <a href="https://github.com/mandywyllie/CSCI5607Project5/blob/main/SceneFile.pdf">here</a>. The SDF ray tracer supports all those original commands, and implements these new commands:
+The raytracer works by reading a plaintext scenefile. Instructions for creating the the scenefile are [here](https://github.io){:target="_blank"}. The SDF ray tracer supports all those original commands, and implements these new commands:
 
 | Function | Parameters | Description |
 | :--- | :--- | :--- |
