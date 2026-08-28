@@ -15,7 +15,7 @@
 Each animation creation executable first renders all frames, then prints the relevant ffmpeg command to stitch them together into a video.
 
 ## SDF Union Examples
-<video src="outdoor_new4.mp4" controls class="responsive"></video>
+<video src="outdoor_new4.mp4" controls style="width: 80%;"></video>
 
 
 ## SDF Morph Example
