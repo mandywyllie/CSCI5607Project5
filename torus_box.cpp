@@ -11,7 +11,7 @@
 #include "ray_trace.h"
 
 int main(int argc, char** argv) {
-    int totalFrames = 70.0f;
+    int totalFrames = 30.0f;
     float fps = 10.0f;
 
     std::cout << "Starting animation sequence generation..." << std::endl;
@@ -45,17 +45,17 @@ output_image: torus_box.png
 material: .7 0 .7 .7 0 .7 0 0 .7 16 0 0 0 1.1
 sdf_torus: 0 5 10 9 1 0 1 0
 material: 0 0 .7 0 0 .7 0 .7 .7 16 0 0 0 1.1
-sdf_torus: 0 5 10 5 3 0 1 0
+#sdf_torus: 0 5 10 5 3 0 1 0
 #morph from torus to torus
-sdf_morph: )" << t*2.0 << R"(
+#sdf_morph: )" << t*2.0 << R"(
 
-#sdf_box
-#sdf_box
+sdf_box: 0 5 10 9 2 9 0 1 0
+#sdf_box: 
 #morph from box to box
 #sdf_morph: )" << t*2.0 << R"(
 
 #morph from morph to morph
-#sdf_morph: )" << t << R"(
+sdf_morph: )" << t << R"(
 
 #sdf_morph: .5
 

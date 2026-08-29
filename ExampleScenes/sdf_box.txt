@@ -17,7 +17,7 @@ sdf_sphere: 3 1.25 0 .75
 
 #green sphere:
 material: 0 .7 0 0 .7 0 0 0 0 16 .9 .9 .9 1.1
-sdf_box: 0 1.25 0 .3 2 .3
+sdf_box: 0 1.25 0 .3 2 .3 0 1 0
 
 
 #blue sphere:

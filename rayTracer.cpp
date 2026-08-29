@@ -1,4 +1,4 @@
-//To Compile: g++ -fsanitize=address -std=c++11 rayTracer.cpp -o torus_box
+//To Compile: g++ -std=c++11 -O3 -fopenmp .\rayTracer.cpp -o rayTracer
 
 //Images Lib includes:
 #define STB_IMAGE_IMPLEMENTATION //only place once in one .cpp file
