@@ -17,20 +17,29 @@ Created with `bounce_union_old.exe`. Uses the old version of `sdf_union`, which 
 Created with `torus_morph.exe`.
 
 # Static images
-These images are created from scene files using the raytracer. The corresponding scene file is listed under each image.
+Static images are created from scene files using the raytracer, which can be found in the example scenes folder in the project folder.
 
 ## Varying blend factor in smooth union
 <figure>
-  <figure style="width: 20%;">
-    <img src="ExampleScenes/outdoor_sdf.png">
-  </figure>
-  <figure style="width: 20%;">
-    <img src="ExampleScenes/outdoor_sdf.png">
-  </figure>
+  <table>
+    <tr>
+      <td><img src="ExampleScenes/varyingK/outdoor_sdf0.1.png" width="400" alt="Image 1"></td>
+      <td><img src="ExampleScenes/varyingK/outdoor_sdf2.png" width="400" alt="Image 2"></td>
+      <td><img src="ExampleScenes/varyingK/outdoor_sdf5.png" width="400" alt="Image 1"></td>
+      <td><img src="ExampleScenes/varyingK/outdoor_sdf10.png" width="400" alt="Image 2"></td>
+    </tr>
+    <tr>
+      <td>k=0.1
+      <td>k=2
+      <td>k=5
+      <td>k=10
+    </tr>
+  </table>
     <figcaption>
-      This sequence of images is generated from almost identical scene files. Only the blend factor changes from left to right.
+      This sequence of images is generated from almost identical scene files which can be found <a href="https://github.com/mandywyllie/CSCI5607Project5/blob/main/ExampleScenes/varyingK">here</a>. Only the blend factor changes from left to right.
       </figcaption>
 </figure>
+
 
 ## Varying time in morph
 
