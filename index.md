@@ -12,10 +12,30 @@ Created with `outdoor_animate.exe`.
 <video src="bounce_union_old.mp4" controls style="width: 90%;"></video>
 Created with `bounce_union_old.exe`. Uses the old version of `sdf_union`, which interpolated the color of a hitpoint based on its distance to each of the objects. This caused errors with refraction and tori, so it is currently commented out in the file.
 
-
 ## SDF Morph Example
 <video src="torus_morph_old.mp4" controls style="width: 90%;"></video>
 Created with `torus_morph.exe`.
+
+# Static images
+These images are created from scene files using the raytracer. The corresponding scene file is listed under each image.
+
+## Varying blend factor in smooth union
+<figure>
+  <figure style="width: 20%;">
+    <img src="ExampleScenes/outdoor_sdf.png">
+  </figure>
+  <figure style="width: 20%;">
+    <img src="ExampleScenes/outdoor_sdf.png">
+  </figure>
+    <figcaption>
+      This sequence of images is generated from almost identical scene files. Only the blend factor changes from left to right.
+      </figcaption>
+</figure>
+
+## Varying time in morph
+
+
+
 
 # Scenefile commands and usage
 The raytracer works by reading a plaintext scenefile. Instructions for creating the the scenefile are [here](https://github.io){:target="_blank"}. The SDF ray tracer supports all those original commands, and implements these new commands:
@@ -25,7 +45,7 @@ The raytracer works by reading a plaintext scenefile. Instructions for creating 
 | `sdf_sphere` | `x y z r` | `(x,y,z)` is the position of the sphere's center, `r` is the radius of the sphere. |
 | `sdf_box` | `x, y, z, hx, hy, hz, dx, dy, dz` | `(x,y,z)` is the position of the box's center, `hx,hy, hz` are the half lengths of the box's sides, and `(dx,dy,dz)` is the direction the top of the box will face. |
 | `sdf_torus` | `x, y, z, r1, r2, dx, dy, dz` | `(x,y,z)` is the position of the torus' center, `r1` is the radius controling the size of the ring, `r2` is the radius controling the thickness of the ring, and `(dx,dy,dz)` is the direction the top of the torus will face. |
-| `sdf_union` | `k` | Creates a smooth union between objects A and B with a blend factor of `k`, of the same material as object A. Requires two sdf objects to be created before the union command. The default is `k=0.3`. `k=0` results in no smoothing between objects, i.e. a hard union, while higher values of k creates more blending between objects.|
+| `sdf_union` | `k` | Creates a smooth union between objects A and B with a blend factor of `k`, of the same material as object A. Requires two sdf objects to be created before the union command. The default is `k=0.3`. Values close to 0 result in no smoothing between objects, i.e. a hard union, while higher values of k creates more blending between objects.|
 | `sdf_morph` | `t` | Creates an "in-between" object at time `t` in morphing from object A to object B, and interpolates the material between object A and object B depending on the time. Requires two sdf objects to be created before the morph command. Displays object A at `t=0`, and object B at `t=1`. `t` should optimally be between 0 and 1, however other values will still render and creates some fun images! |
 
 [//]: # (TODO add example usage here)
