@@ -25,8 +25,8 @@ The raytracer works by reading a plaintext scenefile. Instructions for creating 
 | `sdf_sphere` | `x y z r` | `(x,y,z)` is the position of the sphere's center, `r` is the radius of the sphere. |
 | `sdf_box` | `x, y, z, hx, hy, hz, dx, dy, dz` | `(x,y,z)` is the position of the box's center, `hx,hy, hz` are the half lengths of the box's sides, and `(dx,dy,dz)` is the direction the top of the box will face. |
 | `sdf_torus` | `x, y, z, r1, r2, dx, dy, dz` | `(x,y,z)` is the position of the torus' center, `r1` is the radius controling the size of the ring, `r2` is the radius controling the thickness of the ring, and `(dx,dy,dz)` is the direction the top of the torus will face. |
-| `sdf_union` | `k` | Creates a smooth union between objects A and B with a blend factor of `k`. Requires two sdf objects to be created before the union command. The default is `k=0.3`. `k=0` results in no smoothing between objects, i.e. a hard union, while higher values of k creates more blending between objects.|
-| `sdf_morph` | `t` | Creates an "in-between" object at time `t` in morphing from object A to object B. Requires two sdf objects to be created before the morph command. Displays object A at `t=0`, and object B at `t=1`. `t` should optimally be between 0 and 1, however other values will still render and creates some fun images! |
+| `sdf_union` | `k` | Creates a smooth union between objects A and B with a blend factor of `k`, of the same material as object A. Requires two sdf objects to be created before the union command. The default is `k=0.3`. `k=0` results in no smoothing between objects, i.e. a hard union, while higher values of k creates more blending between objects.|
+| `sdf_morph` | `t` | Creates an "in-between" object at time `t` in morphing from object A to object B, and interpolates the material between object A and object B depending on the time. Requires two sdf objects to be created before the morph command. Displays object A at `t=0`, and object B at `t=1`. `t` should optimally be between 0 and 1, however other values will still render and creates some fun images! |
 
 [//]: # (TODO add example usage here)
 
