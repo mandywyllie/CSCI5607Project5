@@ -37,7 +37,7 @@ Static images are created from scene files using the raytracer, which can be fou
   </table>
     <figcaption>
       This sequence of images is generated from almost identical scene files which can be found <a href="https://github.com/mandywyllie/CSCI5607Project5/blob/main/ExampleScenes/varyingK">here</a>. Only the blend factor changes from left to right.
-      </figcaption>
+    </figcaption>
 </figure>
 
 
