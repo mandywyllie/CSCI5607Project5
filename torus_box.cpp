@@ -1,4 +1,4 @@
-//To Compile: g++ -std=c++11 -O3 -fopenmp .\torus_morph.cpp -o torus_morph
+//To Compile: g++ -std=c++11 -O3 -fopenmp .\torus_box.cpp -o torus_box
 
 //Images Lib includes:
 #define STB_IMAGE_IMPLEMENTATION //only place once in one .cpp file
@@ -12,7 +12,7 @@
 
 int main(int argc, char** argv) {
     int totalFrames = 70.0f;
-    float fps = 50.0f;
+    float fps = 10.0f;
 
     std::cout << "Starting animation sequence generation..." << std::endl;
 
@@ -44,6 +44,7 @@ output_image: torus_box.png
 
 material: .7 0 .7 .7 0 .7 0 0 .7 16 .9 .9 .9 1.1
 sdf_torus: 0 5 10 9 1 0 1 0
+material: 0 0 .7 0 0 .7 0 .7 .7 16 .9 .9 .9 1.1
 sdf_torus: 0 5 10 5 3 0 1 0
 #morph from torus to torus
 #sdf_morph: )" << t << R"(
