@@ -12,9 +12,13 @@ Created with `outdoor_animate.exe`.
 <video src="bounce_union_old.mp4" controls style="width: 90%;"></video>
 Created with `bounce_union_old.exe`. Uses the old version of `sdf_union`, which interpolated the color of a hitpoint based on its distance to each of the objects. This caused errors with refraction and tori, so it is currently commented out in the file.
 
-## SDF Morph Example
+## SDF Morph Examples
 <video src="torus_morph_new.mp4" controls style="width: 90%;"></video>
 Created with `torus_morph.exe`.
+
+<video src="torus_box.mp4" controls style="width: 90%;"></video>
+Created with `torus_box.exe`.
+
 
 # Static images
 Static images are created from scene files using the raytracer, which can be found in the example scenes folder in the project folder.

@@ -42,20 +42,20 @@ camera_up:  0 1 0
 camera_fov_ha: 15
 output_image: torus_box.png
 
-material: .7 0 .7 .7 0 .7 0 0 .7 16 .9 .9 .9 1.1
+material: .7 0 .7 .7 0 .7 0 0 .7 16 0 0 0 1.1
 sdf_torus: 0 5 10 9 1 0 1 0
-material: 0 0 .7 0 0 .7 0 .7 .7 16 .9 .9 .9 1.1
+material: 0 0 .7 0 0 .7 0 .7 .7 16 0 0 0 1.1
 sdf_torus: 0 5 10 5 3 0 1 0
 #morph from torus to torus
-#sdf_morph: )" << t << R"(
+sdf_morph: )" << t*2.0 << R"(
 
 #sdf_box
 #sdf_box
 #morph from box to box
-#sdf_morph: 0.5
+#sdf_morph: )" << t*2.0 << R"(
 
 #morph from morph to morph
-#sdf_morph: 0.5
+#sdf_morph: )" << t << R"(
 
 #sdf_morph: .5
 
@@ -77,7 +77,7 @@ directional_light: 1 1 1 -1 -1 1
 #white directional light directly down
 directional_light: 1 1 1 0 -1 0
 point_light: 0 100 0 0 -9 10
-)"; 
+max_depth = 3)"; 
                             
         sceneFile.close();
 

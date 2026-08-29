@@ -1,15 +1,16 @@
+# Frame 24 scene definition
 camera_pos: 0 15 -30
 camera_fwd: 0 .3 -1
 camera_up:  0 1 0
 camera_fov_ha: 15
 output_image: torus_box.png
 
-material: .7 0 .7 .7 0 .7 0 0 .7 16 .7 .7 .7 1.1
+material: .7 0 .7 .7 0 .7 0 0 .7 16 0 0 0 1.1
 sdf_torus: 0 5 10 9 1 0 1 0
-material: 0 0 .7 0 0 .7 0 .7 .7 16 .7 .7 .7 1.1
+material: 0 0 .7 0 0 .7 0 .7 .7 16 0 0 0 1.1
 sdf_torus: 0 5 10 5 3 0 1 0
 #morph from torus to torus
-#sdf_morph: 0.5
+sdf_morph: 0.675463
 
 #sdf_box
 #sdf_box
@@ -36,8 +37,7 @@ triangle: 0 2 3
 background: .7 .7 .7
 
 directional_light: 1 1 1 -1 -1 1 
-#red directional light directly down
+#white directional light directly down
 directional_light: 1 1 1 0 -1 0
 point_light: 0 100 0 0 -9 10
-
 max_depth = 3
