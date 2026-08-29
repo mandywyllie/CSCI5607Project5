@@ -18,9 +18,9 @@ Created with `bounce_union_old.exe`. Uses the old version of `sdf_union`, which 
 Created with `torus_morph.exe`.
 
 <video src="torus_box.mp4" controls style="width: 90%;"></video>
-Created with `torus_box.exe`.
 
 <video src="torus_to_box.mp4" controls style="width: 90%;"></video>
+Created with `torus_box.exe`.
 
 
 
