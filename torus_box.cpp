@@ -12,7 +12,7 @@
 
 int main(int argc, char** argv) {
     int totalFrames = 70.0f;
-    float fps = 30.0f;
+    float fps = 50.0f;
 
     std::cout << "Starting animation sequence generation..." << std::endl;
 
@@ -36,44 +36,47 @@ int main(int argc, char** argv) {
         float t = std::abs(std::sin(time));
         //write temporary scenefile using the value of the variables at this time
         sceneFile << "# Frame " << frame << " scene definition\n";
-        sceneFile << R"(#Simple sdf_sphere: Scene
-camera_pos: -6 2 -4
-camera_fwd: -.77 0 -.64
+        sceneFile << R"(camera_pos: 0 15 -30
+camera_fwd: 0 .3 -1
 camera_up:  0 1 0
-camera_fov_ha: 35
-output_image: sdf_box2.png
+camera_fov_ha: 15
+output_image: torus_box.png
 
-#"ground" sphere:
-material: .75 .75 .75 .75 .75 .75 .3 .3 .3 32 .2 .2 .2 1.5
-sphere: 0 -50 0 50
+material: .7 0 .7 .7 0 .7 0 0 .7 16 .9 .9 .9 1.1
+sdf_torus: 0 5 10 9 1 0 1 0
+sdf_torus: 0 5 10 5 3 0 1 0
+#morph from torus to torus
+#sdf_morph: )" << t << R"(
 
-#red sphere:
-material: 1 0 0 1 0 0 .3 .3 .3 32 .2 .2 .2 1.5
-#sdf_box: -3 1 0 .75 .75 .75 1 1 0
-sdf_torus: -2 3 6 1 .3 0 0 1
+#sdf_box
+#sdf_box
+#morph from box to box
+#sdf_morph: 0.5
 
+#morph from morph to morph
+#sdf_morph: 0.5
 
-#green sphere:
-material: 0 .7 0 0 .7 0 0 0 0 16 .9 .9 .9 1.1
-sdf_torus: -2 1 4 1 .3 0 0 1
-sdf_morph: )" << t << R"(
-sdf_box: 0 2 -2 1 1 1 1 1 0
+#sdf_morph: .5
 
+max_vertices: 4
 
-#blue sphere:
-material: 0 0 1 0 0 1 0 0 0 16 0 0 0 1.0
-sdf_sphere: 1 1.5 0 1.25
+vertex: -2000 -10 -2000
+vertex:  2000 -10 -2000
+vertex:  2000 -10 2000
+vertex: -2000 -10 2000
 
-sdf_sphere: 5 1 1 0.25
+material: 0 0 0 1 1 1 0 0 0 5 0 0 0 1
 
-#sdf_union
+triangle: 0 1 2
+triangle: 0 2 3
 
-#white overhead light
-point_light: 10 10 10 0 5 0
-ambient_light: .25 .25 .25
-background: .05 .05 .05
+background: .7 .7 .7
 
-max_depth: 5)"; 
+directional_light: 1 1 1 -1 -1 1 
+#white directional light directly down
+directional_light: 1 1 1 0 -1 0
+point_light: 0 100 0 0 -9 10
+)"; 
                             
         sceneFile.close();
 
