@@ -40,10 +40,10 @@ Static images are created from scene files using the raytracer, which can be fou
       <td><img src="ExampleScenes/varyingK/outdoor_sdf10.png" width="400" alt="Image 2"></td>
     </tr>
     <tr>
-      <td>k=0.1
-      <td>k=2
-      <td>k=5
-      <td>k=10
+      <td>k=0.1</td>
+      <td>k=2</td>
+      <td>k=5</td>
+      <td>k=10</td>
     </tr>
   </table>
   <figcaption>
