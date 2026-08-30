@@ -20,6 +20,9 @@ Created with `torus_morph.exe`.
 <video src="torus_box.mp4" controls style="width: 90%;"></video>
 
 <video src="torus_to_box.mp4" controls style="width: 90%;"></video>
+
+<video src="spheretoboxtotorus.mp4" controls style="width: 90%;"></video>
+
 Created with `torus_box.exe`.
 
 
@@ -83,5 +86,7 @@ The raytracer works by reading a plaintext scenefile. Instructions for creating 
 
 
 # Project Files
-You can view the files on github <a href="https://github.com/mandywyllie/CSCI5607Project5/">here</a>, or download the project zip <a href="https://github.com/mandywyllie/CSCI5607Project5/blob/main/CSCI5607project5.zip">here</a>.
+You can view the files on github <a href="https://github.com/mandywyllie/CSCI5607Project5/">here</a>, or download the project zip <a href="https://github.com/mandywyllie/CSCI5607Project5/blob/main/project5graphics.zip">here</a>.
 
+# Project Write-Up
+The project write up is [here](/projectWriteUp.pdf)

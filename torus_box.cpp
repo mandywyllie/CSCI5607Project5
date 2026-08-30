@@ -33,7 +33,7 @@ int main(int argc, char** argv) {
             return 1;
         }
 
-        float t = std::abs(std::sin(time));
+        float t = std::abs(std::sin(time*.5));
         //write temporary scenefile using the value of the variables at this time
         sceneFile << "# Frame " << frame << " scene definition\n";
         sceneFile << R"(camera_pos: 0 15 -30
@@ -43,19 +43,32 @@ camera_fov_ha: 15
 output_image: torus_box.png
 
 material: .7 0 .7 .7 0 .7 0 0 .7 16 0 0 0 1.1
-sdf_torus: 0 5 10 9 1 0 1 0
+#sdf_torus: 0 5 10 9 1 0 1 0
 material: 0 0 .7 0 0 .7 0 .7 .7 16 0 0 0 1.1
 #sdf_torus: 0 5 10 5 3 0 1 0
-#morph from torus to torus
-#sdf_morph: )" << t*2.0 << R"(
+#morph from thic toruc to torus
+#sdf_morph: )" << (t-.66f)*3.0f << R"(
 
+material: 0 0 .7 0 0 .7 0 .7 .7 16 0 0 0 1.1
+sdf_torus: 0 5 10 5 2 0 1 0
+material: .7 0 .7 .7 0 .7 0 0 .7 16 0 0 0 1.1
 sdf_box: 0 5 10 9 2 9 0 1 0
-#sdf_box: 
-#morph from box to box
-#sdf_morph: )" << t*2.0 << R"(
+#morph from box to thic torus
+sdf_morph: )" << (t-.5f)*2.0f << R"(
 
-#morph from morph to morph
+
+material: .7 0 .7 .7 0 .7 0 0 .7 16 0 0 0 1.1
+sdf_box: 0 5 10 9 2 9 0 1 0
+material: 0 0 .7 0 0 .7 0 .7 .7 16 0 0 0 1.1
+sdf_sphere: 0 5 10 5
+#morph from sphere to box
+sdf_morph: )" << t*2.0f << R"(
+
+#morph from spheretobox to boxtothictorus
 sdf_morph: )" << t << R"(
+
+#morph from spheretoboxtoboxtothictorus to thictorustotorus
+#sdf_morph: )" << t << R"(
 
 #sdf_morph: .5
 
