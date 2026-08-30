@@ -72,12 +72,10 @@ The raytracer works by reading a plaintext scenefile. Instructions for creating 
 # Compiling and running the raytracer
   
   1. To Compile
-    With Checks for memory issues: 
-        `g++ -fsanitize=address -std=c++11 rayTracer.cpp`
-    Without Checks for memory issues:
-        `g++ -std=c++11 rayTracer.cpp`
+    Open the project folder in the terminal and run the command: 
+        `g++ -std=c++11 -O3 -fopenmp .\rayTracer.cpp -o rayTracer`
 
-1. to take in a scene file and output an image:
+1. To take in a scene file and output an image:
    `.\ray.exe *path to scenefile* `   
    Ex: `.\ray.exe .\ExampleScenes\sdf_box.txt `
 
@@ -87,4 +85,7 @@ The raytracer works by reading a plaintext scenefile. Instructions for creating 
 You can view the files on github <a href="https://github.com/mandywyllie/CSCI5607Project5/">here</a>, or download the project zip <a href="https://github.com/mandywyllie/CSCI5607Project5/blob/main/project5graphics.zip">here</a>.
 
 # Project Write-Up
-The project write up is [here](/projectWriteUp.pdf)
+The project write up is [here](/projectWriteUp.pdf).
+
+# Special Thanks
+Special thanks to my cat Cali for helping me code (she actually did most of the work).
