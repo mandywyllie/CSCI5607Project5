@@ -52,8 +52,6 @@ Static images are created from scene files using the raytracer, which can be fou
 </figure>
 
 
-## Varying time in morph
-
 
 
 
